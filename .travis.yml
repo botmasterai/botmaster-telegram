@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+- '7'
+- '6'
+- '5'
+- '4'
+after_success: npm run coveralls
+before_install:
+- openssl aes-256-cbc -K $encrypted_0ce370522fcf_key -iv $encrypted_0ce370522fcf_iv
+  -in _config.js.enc -out tests/_config.js -d
