@@ -55,6 +55,7 @@ https://api.telegram.org/bot<authToken>/setWebhook?url=<'Your Base URL'>/telegra
 
 ```js
 const Botmaster = require('botmaster');
+const TelegramBot = require('botmaster-telegram');
 const botmaster = new Botmaster();
 
 const telegramSettings = {
@@ -64,7 +65,7 @@ const telegramSettings = {
   webhookEndpoint: '/webhook1234/',
 };
 
-const telegramBot = new Botmaster.botTypes.TelegramBot(telegramSettings);
+const telegramBot = new TelegramBot(telegramSettings);
 botmaster.addBot(telegramBot);
 
 botmaster.use({
