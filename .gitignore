@@ -11,6 +11,7 @@ Thumbs.db
 .Trashes
 
 testing_creds.md
+tests/_config.js
 
 # Application specific files
 node_modules
