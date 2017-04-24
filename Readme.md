@@ -49,7 +49,7 @@ https://api.telegram.org/bot<authToken>/setWebhook?url=<'Your Base URL'>/telegra
 >Because Telegram doesn't send any type of information to verify the identity of the origin of the update, it is highly recommended that you include a sort of hash in your webhookEndpoint. I.e., rather than having this: `webhookEndpoint: '/webhook/'`, do something more like this: `webhookEndpoint: '/webhook92ywrnc9qm4qoiuthecvasdf42FG/'`. This will assure that you know where the request is coming from.
 
 
->If you are not too sure how webhooks work and/or how to get them to run locally, go to [webhooks](/getting-started/webhooks) to read some more.
+>If you are not too sure how webhooks work and/or how to get them to run locally, go to [webhooks](http://botmasterai.com/documentation/latest/getting-started/webhooks.html) to read some more.
 
 ## Code
 
@@ -62,7 +62,7 @@ const telegramSettings = {
   credentials: {
     authToken: 'YOUR authToken',
   },
-  webhookEndpoint: '/webhook1234/',
+  webhookEndpoint: 'webhook1234',
 };
 
 const telegramBot = new TelegramBot(telegramSettings);
