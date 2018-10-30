@@ -65,7 +65,7 @@
     "node": ">=4.x.x"
   },
   "devDependencies": {
-    "botmaster": "^3.0.7",
+    "botmaster": "^3.2.0",
     "ava": "^0.18.2",
     "botmaster-test-fixtures": "^2.1.0",
     "coveralls": "^2.11.16",
